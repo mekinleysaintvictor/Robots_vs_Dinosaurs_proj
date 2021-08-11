@@ -23,6 +23,7 @@ class Weapon:
             self.set_attack_power()
         else:
             self.name = "sword"
+            self.set_attack_power()
 
     # ======= GETTER AND SETTER FOR WEAPON ATTACK POWER ========
 

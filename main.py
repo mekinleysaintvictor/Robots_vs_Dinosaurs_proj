@@ -1,5 +1,6 @@
 from weapon import Weapon
 from robot import Robot
+from dinosaur import Dinosaur
 
 
     #======= TESTING WEAPON CLASS ========
@@ -30,3 +31,10 @@ robot_one.set_robot_weapon()
 print(robot_one.get_robot_name())
 print(robot_one.get_robot_health())
 print(robot_one.get_robot_weapon())
+
+    #====== TRSTING DINOSAUR CLASS =======
+dinosaur_one = Dinosaur()
+dinosaur_one.set_dinosaur_name("Carl")
+print(dinosaur_one.get_dinosaur_name())
+print(dinosaur_one.get_dinosaur_health())
+print(dinosaur_one.get_dinosaur_attack())
