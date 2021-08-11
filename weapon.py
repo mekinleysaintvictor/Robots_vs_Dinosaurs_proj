@@ -5,17 +5,13 @@ class Weapon:
         self.name = ''
         self.attack = 0
 
-    # def set_weapon_details(self, name):
-    #     self.name = name
-    #     self.attack = self.set_attack_power()
-
     # ======= GETTER AND SETTER FOR WEAPON NAME ========
 
     def get_weapon_name(self):
         return self.name
         
     def set_weapon_name(self):
-        name = input("Choose your weapon: sword, ray gun, or chainsaw ")
+        name = input("Choose your robot's weapon: sword, ray gun, or chainsaw :: ")
         if(name.lower() == "sword"):
             self.name = name
             self.set_attack_power()
@@ -26,7 +22,7 @@ class Weapon:
             self.name = name
             self.set_attack_power()
         else:
-            self.name = ""
+            self.name = "sword"
 
     # ======= GETTER AND SETTER FOR WEAPON ATTACK POWER ========
 

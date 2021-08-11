@@ -1,11 +1,11 @@
 from weapon import Weapon
+from robot import Robot
 
 
     #======= TESTING WEAPON CLASS ========
 robot_sword = Weapon()
 robot_raygun = Weapon()
 robot_chainsaw = Weapon()
-robot_weapon = Weapon()
 
 # NAMING AND SETTING ATACK POWER FOR FIRST WEAPON (SWORD)
 robot_sword.set_weapon_name()
@@ -22,7 +22,11 @@ robot_chainsaw.set_weapon_name()
 print(robot_chainsaw.get_weapon_name())
 print(robot_chainsaw.get_weapon_attack())
 
-# TESTING SET WEAPON DETAILS FUNCTION
-# robot_weapon.set_weapon_details()
-print(robot_weapon.get_weapon_name())
-print(robot_weapon.get_weapon_attack())
+    #====== TESTING ROBOT CLASS ======
+
+robot_one = Robot()
+robot_one.set_robot_name("Robert")
+robot_one.set_robot_weapon()
+print(robot_one.get_robot_name())
+print(robot_one.get_robot_health())
+print(robot_one.get_robot_weapon())
