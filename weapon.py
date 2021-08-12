@@ -1,9 +1,9 @@
 class Weapon:
     # ======== CONSTRUCTOR ==========
 
-    def __init__(self):
-        self.name = ''
-        self.attack = 0
+    def __init__(self, name, attack):
+        self.name = name
+        self.attack = attack
 
     # ======= GETTER AND SETTER FOR WEAPON NAME ========
 

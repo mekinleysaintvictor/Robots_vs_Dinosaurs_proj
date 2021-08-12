@@ -1,10 +1,10 @@
 from weapon import Weapon
 
 class Robot:
-    def __init__(self):
-        self.name = ""
+    def __init__(self, name):
+        self.name = name
         self.health = 100
-        self.weapon = Weapon()
+        self.weapon = Weapon("sword", 10)
 
     # ======== GETTER AND SETTER FOR NAME ===========
     def get_robot_name(self):
